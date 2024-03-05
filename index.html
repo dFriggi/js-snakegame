@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./arrows.css">
      <link rel="stylesheet" href="./style.css">
      <script defer src="./script.js"></script>
      <title>Snake Game</title>
@@ -15,6 +20,22 @@
 <body>
     <h1>SNAKE GAME</h1>
     <canvas id="snake" width="512" height="512"></canvas>
+
+        <div class="arrowUp">
+            <button id="up" type="button">
+                ⬆</button>
+        </div>
+
+        <div class="arrowsLow">
+            <button id="left" type="button">
+                ⬅</button>
+
+            <button id="down" type="button">
+                ⬇</button>    
+
+            <button id="right" type="button">
+                ➡</button>
+        </div>
     <!--canvas nada mais é do que um espaço
     onde podemos desenhar elementos específicos, formas geométricas e imagens-->
 </body>

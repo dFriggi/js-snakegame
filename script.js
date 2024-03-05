@@ -1,5 +1,9 @@
 let canvas = document.getElementById("snake")
 let context = canvas.getContext("2d")//renderiza o desenho feito no canvas
+let buttonUp = document.getElementById("up")
+let buttonDown = document.getElementById("down")
+let buttonRight = document.getElementById("right")
+let buttonLeft = document.getElementById("left")
 /*sempre antes de desenhar, devemos selecionar a canvas
  e capturar o contexto gráfico da mesma, pelo metodo getContext(), da seguinte forma:*/
 let box = 32
@@ -13,6 +17,19 @@ let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
 }
+
+buttonUp.addEventListener('click', () => {
+    if(direction != 'down') direction = 'up'
+})
+buttonDown.addEventListener('click', () => {
+    if(direction != 'up') direction = 'down'
+})
+buttonRight.addEventListener('click', () => {
+    if(direction != 'left') direction = 'right'
+})
+buttonLeft.addEventListener('click', () => {
+    if(direction != 'right') direction = 'left'
+})
 
 function createBG() {
     context.fillStyle = "lightgreen";
